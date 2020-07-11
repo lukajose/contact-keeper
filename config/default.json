@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://lukagam:269zRZFdJeqqtVtX@cluster0-vz7oj.mongodb.net/test?retryWrites=true&w=majority",
+    "secret":"secret"
+}
