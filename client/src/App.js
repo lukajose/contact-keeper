@@ -12,7 +12,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import AlertState from './context/alert/AlertState'
 import setAuthToken from './utils/setAuthToken'
-
+import SideBar from './components/layout/Sidebar'
 if(localStorage.token) {
   setAuthToken(localStorage.token)
 }
@@ -26,6 +26,7 @@ const App = ()=> {
           <Router>
             <Fragment>
               <NavBar/>
+              <SideBar/>
               <div className="container">
                 <Alerts/>
                 <Switch>

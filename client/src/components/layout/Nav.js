@@ -41,8 +41,8 @@ const Navbar = ({title,icon})=>{
     )
     return (
         <div className="navbar bg-primary">
-            <h1>
-                <i className={icon}/>{title}
+            <h1 style={{paddingLeft:"270px"}}>
+                <i className={icon}  style={{paddingRight:"10px"}}/>{title}
             </h1>
             <ul>
                 {isAuthenticated? authLinks:guestLinks }
@@ -59,8 +59,8 @@ Navbar.propTypes = {
 }
 
 Navbar.defaultProps = {
-    title:'Contact Keeper',
-    icon:'fas fa-id-card-alt'
+    title:'Trading Portfolio',
+    icon:"fas fa-chart-line"
 }
 
 export default Navbar;
